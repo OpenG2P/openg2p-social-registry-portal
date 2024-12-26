@@ -66,12 +66,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 50px;
+  padding-top: 45px;
   margin: 15px;
   border: 1px solid #f8f4f4;
   border-radius: 8px;
   background: #f8f4f4;
-  width: 100px; /* Set a fixed width for uniformity */
+  width: 120px; /* Set a fixed width for uniformity */
   height: 200px; /* Keep the height consistent */
   box-sizing: border-box; /* Ensure padding doesn't affect width */
 }
@@ -82,12 +82,13 @@
 }
 
 .image {
-  max-width: 40px;/* Ensure the image fits inside the container */
-  max-height: 40px;
+  max-width: 50px;/* Ensure the image fits inside the container */
+  max-height: 50px;
   object-fit: cover; /* Keeps the aspect ratio */
 }
 
 .nestedTitle {
+  margin-top: 5px;
   margin-bottom: auto;
   text-align: center;
 }
