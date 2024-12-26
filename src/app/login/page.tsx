@@ -12,7 +12,7 @@ const LoginPage: React.FC = () => {
       backgroundColor: '#f0f2f5',
       margin: 0,
     }}>
-      {/* Card */}
+     
       <div style={{
         display: 'flex',
         width: '85%',
@@ -22,7 +22,7 @@ const LoginPage: React.FC = () => {
         boxShadow: '0 6px 12px rgba(0, 0, 0, 0.2)',
         backgroundColor: '#fff',
       }}>
-        {/* Left Section */}
+       
         <div style={{
           flex: 1,
           backgroundColor: '#082246',
@@ -33,18 +33,51 @@ const LoginPage: React.FC = () => {
           alignItems: 'center',
           flexDirection: 'column',
           padding: '30px',
+          position: 'relative', 
         }}>
+         
+          <Image
+  src="/welcome.png" 
+  alt="Welcome"
+  width={200} 
+  height={200} 
+  style={{
+    position: 'absolute',
+    top: '1px',
+    left: '10px', 
+    zIndex: 1, 
+    opacity: 0.2, 
+  }}
+/>
+
+          
           <h3 style={{ fontSize: '36px', fontWeight: 'light', marginBottom: '10px' }}>
             Welcome to
           </h3>
           <p style={{ fontSize: '24px', fontWeight: 'light', marginBottom: '10px' }}>
             Self Registration Portal
           </p>
-          <p style={{ fontSize: '20px', fontWeight: 'light' , color:'#f07b1b'}}>
-by OpenG2P          </p>
+          <p style={{ fontSize: '20px', fontWeight: 'light', color:'#f07b1b' }}>
+            by OpenG2P
+          </p>
+
+          
+          <Image
+            src="/welcome.png" 
+            alt="Welcome"
+            width={200} 
+            height={200} 
+            style={{
+              position: 'absolute',
+              bottom: '10px',
+              right: '10px', 
+              zIndex: 1, 
+              opacity: 0.2, 
+            }}
+          />
         </div>
 
-        {/* Right Section */}
+    
         <div style={{
           flex: 1,
           display: 'flex',
@@ -54,14 +87,13 @@ by OpenG2P          </p>
           padding: '30px',
           backgroundColor: '#f4f4f4',
         }}>
-          {/* Logo */}
+         
           <div style={{ marginBottom: '20px' }}>
             <Image
-              src="/logo.png" // Replace with your logo path
+              src="/logo.png" 
               alt="OpenG2P Logo"
               width={150}
               height={150}
-              
             />
           </div>
 
@@ -117,25 +149,24 @@ by OpenG2P          </p>
             </div>
 
             <button
-  type="button"
-  style={{
-    width: '100%',
-    padding: '10px',
-    backgroundColor: '#f07b1b',
-    color: '#fff',
-    fontWeight: 'bold',
-    border: 'none',
-    borderRadius: '8px',
-    cursor: 'pointer',
-    marginBottom: '10px',
-  }}
-  onClick={() => {
-    window.location.href = '/dashboard'; // Redirect to /dashboard
-  }}
->
-  LOGIN
-</button>
-
+              type="button"
+              style={{
+                width: '100%',
+                padding: '10px',
+                backgroundColor: '#f07b1b',
+                color: '#fff',
+                fontWeight: 'bold',
+                border: 'none',
+                borderRadius: '8px',
+                cursor: 'pointer',
+                marginBottom: '10px',
+              }}
+              onClick={() => {
+                window.location.href = '/dashboard'; 
+              }}
+            >
+              LOGIN
+            </button>
 
             <div style={{
               textAlign: 'center',
@@ -165,7 +196,7 @@ by OpenG2P          </p>
               }}
             >
               <Image
-                src="/esignet_logo.png" // Replace with eSignet logo path
+                src="/esignet.png"
                 alt="eSignet Logo"
                 width={20}
                 height={20}
@@ -191,9 +222,9 @@ by OpenG2P          </p>
               }}
             >
               <Image
-                src="/keycloak.png" // Replace with Keycloak logo path
+                src="/keycloak.png" 
                 alt="Keycloak Logo"
-                width={20}
+                width={30}
                 height={20}
                 style={{ marginRight: '10px' }}
               />
